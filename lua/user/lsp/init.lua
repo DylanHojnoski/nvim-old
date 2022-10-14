@@ -8,5 +8,11 @@ require("user.lsp.handlers").setup()
 require "user.lsp.null-ls"
 require'lspconfig'.pyright.setup{}
 require'lspconfig'.jdtls.setup{}
+require'lspconfig'.tsserver.setup{}
+require'lspconfig'.html.setup{}
+require'lspconfig'.tailwindcss.setup{}
+require'lspconfig'.marksman.setup{}
+require'lspconfig'.rust_analyzer.setup{}
+
 
 
