@@ -13,6 +13,13 @@ require'lspconfig'.html.setup{}
 require'lspconfig'.tailwindcss.setup{}
 require'lspconfig'.marksman.setup{}
 require'lspconfig'.rust_analyzer.setup{}
+require'lspconfig'.clangd.setup{}
 
-
+vim.opt.termguicolors = true
+	local ccc = require("ccc")
+	local mapping = ccc.mapping
+	
+	ccc.setup({
+		-- Your favorite settings
+	})
 

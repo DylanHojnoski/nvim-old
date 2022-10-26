@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/home/dylanh/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
   },
+  ["ccc.nvim.git"] = {
+    loaded = true,
+    path = "/home/dylanh/.local/share/nvim/site/pack/packer/start/ccc.nvim.git",
+    url = "https://github.com/uga-rosa/ccc.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/dylanh/.local/share/nvim/site/pack/packer/start/cmp-buffer",
