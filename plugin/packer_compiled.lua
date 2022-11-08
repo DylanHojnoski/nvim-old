@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "/home/dylanh/.local/share/nvim/site/pack/packer/start/Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
   },
-  ["FixCursorHold.nvim"] = {
-    loaded = true,
-    path = "/home/dylanh/.local/share/nvim/site/pack/packer/start/FixCursorHold.nvim",
-    url = "https://github.com/antoinemadec/FixCursorHold.nvim"
-  },
   LuaSnip = {
     loaded = true,
     path = "/home/dylanh/.local/share/nvim/site/pack/packer/start/LuaSnip",
@@ -98,11 +93,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/dylanh/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
-  },
-  ["ccc.nvim.git"] = {
-    loaded = true,
-    path = "/home/dylanh/.local/share/nvim/site/pack/packer/start/ccc.nvim.git",
-    url = "https://github.com/uga-rosa/ccc.nvim"
   },
   ["cmp-buffer"] = {
     loaded = true,

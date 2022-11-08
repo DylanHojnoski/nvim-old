@@ -7,19 +7,11 @@ require "user.lsp.configs"
 require("user.lsp.handlers").setup()
 require "user.lsp.null-ls"
 require'lspconfig'.pyright.setup{}
-require'lspconfig'.jdtls.setup{}
+--require'lspconfig'.jdtls.setup{}
 require'lspconfig'.tsserver.setup{}
 require'lspconfig'.html.setup{}
 require'lspconfig'.tailwindcss.setup{}
 require'lspconfig'.marksman.setup{}
 require'lspconfig'.rust_analyzer.setup{}
 require'lspconfig'.clangd.setup{}
-
-vim.opt.termguicolors = true
-	local ccc = require("ccc")
-	local mapping = ccc.mapping
-	
-	ccc.setup({
-		-- Your favorite settings
-	})
 

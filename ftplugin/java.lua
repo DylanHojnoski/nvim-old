@@ -83,7 +83,7 @@ local config = {
     -- 💀
     -- See `data directory configuration` section in the README
     "-data",
-    workspace_dir,
+    root_dir,
   },
 
   on_attach = require("user.lsp.handlers").on_attach,
