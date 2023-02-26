@@ -59,6 +59,7 @@ return packer.startup(function(use)
   --use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
 
+
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   use "lunarvim/darkplus.nvim"
@@ -72,11 +73,18 @@ return packer.startup(function(use)
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-nvim-lsp"
 
+  -- Debugger
+use 'mfussenegger/nvim-dap'
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
   -- LSP
+  use {
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
+    "neovim/nvim-lspconfig",
+}
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
   use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
@@ -93,6 +101,12 @@ return packer.startup(function(use)
     run = ":TSUpdate",
   }
   use "JoosepAlviste/nvim-ts-context-commentstring"
+  use {
+    'laytan/tailwind-sorter.nvim',
+    requires = {'nvim-treesitter/nvim-treesitter', 'nvim-lua/plenary.nvim'},
+    config = function() require('tailwind-sorter').setup() end,
+    run = 'cd formatter && npm i && npm run build',
+  }
 
   -- Git
   use "lewis6991/gitsigns.nvim"

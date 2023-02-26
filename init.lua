@@ -19,4 +19,6 @@ require "user.indentline"
 require "user.alpha"
 require "user.whichkey"
 require "user.autocommands"
+require "user.mason-config"
+require "user.dap"
 vim.cmd[[colorscheme everforest]]
